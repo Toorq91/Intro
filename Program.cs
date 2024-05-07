@@ -15,17 +15,17 @@ namespace My_Awesome_Program
             // Starting a conversation
 
             Console.WriteLine("A proud knight named...?");
-            Console.ReadLine();
-            Console.WriteLine("...walked into a bar. At the counter he met a...");
-            Console.ReadLine();
-            Console.WriteLine("...who asked him what he wanted to drink?");
-            Console.ReadLine();
-            Console.WriteLine("...shouted the knight! \nThe bartender shushed him quickly.");
+            string knightName = Console.ReadLine();
+            Console.WriteLine($"...walked into a bar. At the counter {knightName} met a...");
+            string animalName = Console.ReadLine();
+            Console.WriteLine($"{animalName} asked him what he wanted to drink?");
+            string drinkName = Console.ReadLine();
+            Console.WriteLine($"...{drinkName} shouted {knightName}! \nThe bartender shushed him quickly.");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("But it was too late to apologize... too laaaaaate.... \nA dragon ate them both.");
+            Console.WriteLine($"But it was too late...\nA dragon swooped in and hit {knightName}. \nSo hard in fact that all the {drinkName} spilt on the floor and it also left a cut on {knightName}'s arm.");
             Console.ForegroundColor = ConsoleColor.Green;
             Console.ReadLine();
-            Console.WriteLine("Yes, it is what it is! :)");
+            Console.WriteLine("Yes, Finished, FINITO... THE END! :)");
             Console.ReadKey();
         }
     }
