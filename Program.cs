@@ -9,8 +9,10 @@ namespace My_Awesome_Program
             // Change the appearance of the console
 
             Console.Title = "Toorq";
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WindowHeight = 40;
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WindowTop = 0;
+            Console.WindowWidth = 130;
+            Console.WindowHeight = 30;
 
             // Starting a conversation
 
@@ -26,9 +28,9 @@ namespace My_Awesome_Program
 
             bool enounterDragon = new Random().Next(0, 2) == 0;
 
-            // Will get a different outcome if writing vine, Vine, VINE or shot, Shot, SHOT as the choice of drink.
+            // Will get a different outcome if writing wine, Wine, WINE or shot, Shot, SHOT as the choice of drink.
 
-            if (drinkName.ToLower() == "vine" || drinkName.ToLower() == "shot")
+            if (drinkName.ToLower() == "wine" || drinkName.ToLower() == "shot")
             {
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine($"{knightName} ordered {drinkName}, an interesting choice indeed!");
@@ -45,7 +47,7 @@ namespace My_Awesome_Program
             else
             {
                 Console.ForegroundColor = ConsoleColor.Blue;
-                Console.WriteLine($"{knightName} enjoyed the {drinkName} and had a pleasant conversation with {animalName}. ");
+                Console.WriteLine($"{knightName} enjoyed the {drinkName} and had a pleasant conversation with the {animalName}. ");
                 Console.WriteLine($"Feeling satisfied, {knightName} left the bar and embarked on a new adventure. The end!");
             }
 
